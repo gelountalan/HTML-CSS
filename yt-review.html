@@ -17,8 +17,16 @@
            border-radius: 5px;
            cursor: pointer;
            margin-right: 8px;
+           transition: opacity .5s;
         }
 
+        .subscribe-button:hover{       /*extra style pseudo class, kapag naka hover ang mouse tsaka gagana*/
+           opacity: .8;                          /* background-color:rgb(245, 68, 68); */
+
+        }
+        .subscribe-button:active{     /* gagana lang kapag cinlick*/
+            opacity: .5;                                    /*background-color: rgb(145, 0, 0);*/
+        }
     </style>
 
     <button class = "subscribe-button"> SUBSCRIBE</button>
@@ -35,8 +43,19 @@
            width: 50px;
            border-radius: 5px;
            cursor: pointer;
+           transition: background-color .5s,
+           color .5s;
         }
 
+        .join:hover{
+
+            background-color: rgb(65, 94, 255);
+            color:white;
+        }
+
+        .join:active{
+            opacity: .7;
+        }
     </style>
 
     <button class = "join">JOIN</button>
